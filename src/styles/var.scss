@@ -1,0 +1,46 @@
+$container: 1024px;//1060px;
+
+$base-font: 16px;
+
+// default
+$clr-bg: #fff;
+$clr-text: #626571;
+$clr-accent: #6FBF6A;
+$clr-accent-light: #6FBF6A;
+$clr-back: #626571;
+$clr-back-dark: #5E616E;
+$clr-dark-gray: #505159;
+$clr-light-gray: #8A8D94;
+
+$clr: (
+    // Orion
+    (
+        clr-text: #2C3036,
+        clr-accent: #9E1334,
+        clr-accent-light: #9E1334,
+        clr-back: #2C3036,
+        clr-back-dark: #25292E,
+        clr-dark-gray: #1D1E1F,
+        clr-light-gray: #4D4E54,
+    ),
+    // RangeSoft
+    (
+        clr-text: #474B55,
+        clr-accent: #6487C4,
+        clr-accent-light: #92B6DE,
+        clr-back: #474B55,
+        clr-back-dark: #444852,
+        clr-dark-gray: #313235,
+        clr-light-gray: #686A72,
+    ),
+    // SRI
+    (
+        clr-text: #727271,
+        clr-accent: #1CB9C8,
+        clr-accent-light: #1CB9C8,
+        clr-back: #1C3F65,
+        clr-back-dark: #17385C,
+        clr-dark-gray: #152A4D,
+        clr-light-gray: #556581,
+    )
+)

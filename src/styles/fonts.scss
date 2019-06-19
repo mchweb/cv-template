@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('./static/HelveticaNeueLTPro-Lt.woff2') format('woff2'),
+        url('./static/HelveticaNeueLTPro-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('./static/HelveticaNeueLTPro-Bd.woff2') format('woff2'),
+        url('./static/HelveticaNeueLTPro-Bd.woff') format('woff');   
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro Cn';
+    src: url('./static/HelveticaNeueLTPro-LtCn.woff2') format('woff2'),
+        url('./static/HelveticaNeueLTPro-LtCn.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro Cn';
+    src: url('./static/HelveticaNeueLTPro-BdCn.woff2') format('woff2'),
+        url('./static/HelveticaNeueLTPro-BdCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('./static/Calibre-Regular.woff2') format('woff2'),
+        url('./static/Calibre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

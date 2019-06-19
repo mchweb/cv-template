@@ -1,0 +1,66 @@
+@for $i from 1 through length($clr) {
+    $c: nth($clr, $i);
+    .theme_#{$i} {
+        color: map-get($c, clr-text);
+        .header {
+            background-color: map-get($c, clr-accent);
+        }
+        .sidebar {
+            background-color: map-get($c, clr-back);
+        }
+        .sidebar__content {
+            border-color: map-get($c, clr-back-dark);
+        }
+        h2, .h2 {
+            border-color: map-get($c, clr-accent-light);
+        }
+        .keywords-group {
+            border-top-color: map-get($c, clr-light-gray);
+            border-bottom-color: map-get($c, clr-dark-gray)
+        }
+        .timeline-item__line {
+            background-color: map-get($c, clr-text);
+            &:before {
+                border-color: map-get($c, clr-text);
+            }
+        }
+        .footer__content {
+            &:before {
+                border-left-color: map-get($c, clr-back);
+            }
+        }
+        .footer__paragraph {
+            .slash {
+                color: map-get($c, clr-accent-light);
+            }
+            a {
+                color: map-get($c, clr-text);
+            }
+        }
+    }
+}
+
+.theme_1 {
+    .sidebar_main {
+        background-image: url('./images/orion_logo_back.svg');
+        background-position-x: 3em;
+        background-size: 120%;
+        background-position-y: 95%;
+        background-repeat: no-repeat;
+    }
+}
+.theme_2 {
+    .sidebar_main {
+        background-image: url('./images/rangesoft_logo_back.svg');
+        background-position-x: -10em;
+        background-size: 120%;
+        background-position-y: 95%;
+        background-repeat: no-repeat;
+    }
+}
+.theme_3 {
+    .footer__logo img {
+        width: 70%;
+        margin-top: -2em;
+    }
+}
