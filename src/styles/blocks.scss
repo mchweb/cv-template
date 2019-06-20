@@ -1,5 +1,5 @@
 .sidebar {
-	padding: 3em 0;
+	padding: 5em 0 3em;
     color: $clr-bg;
     background-color: $clr-back;
     
@@ -11,7 +11,7 @@
 
 .header {
     padding: 1em 3em;
-    width: 125%;
+    width: 120%;
     background-color: $clr-accent;
 
     .header__subtitle {
@@ -51,7 +51,7 @@
             vertical-align: middle;
             height: 0;
             width: 0;
-            top: 0.45em;
+            top: 0.3em;
             padding-right: 1em;
             position: absolute;
         }
@@ -62,12 +62,13 @@
 }
 
 .content {
-    padding: 3em 0;
+    padding: 5em 0 3em;
 }
 
 .intro {
-    padding: 1.2em 3em;
+    padding: 1.2em 3.5em 1.2em 3em;
     margin-left: 10%;
+    text-align: justify;
 }
 
 .section {
@@ -111,14 +112,14 @@
         font-weight: bold;
         text-align: right;
         flex: 0 0 25%;
-        padding: 0 1.5em;
+        padding: 0 1.5em 0 0;
     }
     .timeline-item__line {
-        flex: 0 0 0.075em;
+        flex: 0 0 1px;
     }
     .timeline-item__content {
         flex: 1;
-        padding: 0 1.5em 0.5em;
+        padding: 0 0 0.5em 1.5em;
     }
 }
 
@@ -129,12 +130,12 @@
             &:before {
                 content: '';
                 margin-top: 0.15em;
-                width: 0.5em;
-                height: 0.5em;
+                width: 0.6875em;
+                height: 0.6875em;
                 position: absolute;
-                margin-left: -0.2875em;
+                margin-left: calc(-0.6875em / 2 - 0.0625em);
                 border-radius: 100%;
-                border: 0.075em solid $clr-text;
+                border: 1px solid $clr-text;
                 background-color: $clr-bg;
             }
         }
