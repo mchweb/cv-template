@@ -1,208 +1,208 @@
 .sidebar {
-	padding: 5em 0 3em;
-    color: $clr-bg;
-    background-color: $clr-back;
-    
-    .sidebar__content {
-        padding: 3em;
-        border-top: 1em solid $clr-back-dark;
-    }
+  padding: 5em 0 3em;
+  color: $clr-bg;
+  background-color: $clr-back;
+
+  .sidebar__content {
+    padding: 3em;
+    border-top: 1em solid $clr-back-dark;
+  }
 }
 
 .header {
-    padding: 1em 3em;
-    width: 120%;
-    background-color: $clr-accent;
+  padding: 1em 3em;
+  width: 120%;
+  background-color: $clr-accent;
 
-    .header__subtitle {
-        font-family: 'Helvetica Neue LT Pro Cn';
-        font-size: 1.56em;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
+  .header__subtitle {
+    font-family: "Helvetica Neue LT Pro Cn";
+    font-size: 1.56em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
 .keywords-group {
-    padding: 1.25em 0;
-    border-top: 0.1em solid $clr-light-gray;
-    border-bottom: 0.1em solid $clr-dark-gray;
+  padding: 1.25em 0;
+  border-top: 0.1em solid $clr-light-gray;
+  border-bottom: 0.1em solid $clr-dark-gray;
 
-    &:first-child {
-        padding-top: 0;
-        border-top: none;
-    }
-    &:last-child {
-        padding-bottom: 0;
-        border-bottom: none;
-    }
+  &:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .keywords {
-    column-count: 2;
-    .keywords__item {
-        text-transform: lowercase;
-        position: relative;
-        &:before {
-            content: "";
-            border-color: transparent $clr-bg;
-            border-style: solid;
-            border-width: 0.25em 0 0.25em 0.25em;
-            display: inline-block;
-            vertical-align: middle;
-            height: 0;
-            width: 0;
-            top: 0.3em;
-            padding-right: 1em;
-            position: absolute;
-        }
-        span {
-            padding-left: 1em;
-        }
+  column-count: 2;
+  .keywords__item {
+    text-transform: lowercase;
+    position: relative;
+    &:before {
+      content: "";
+      border-color: transparent $clr-bg;
+      border-style: solid;
+      border-width: 0.25em 0 0.25em 0.25em;
+      display: inline-block;
+      vertical-align: middle;
+      height: 0;
+      width: 0;
+      top: 0.3em;
+      padding-right: 1em;
+      position: absolute;
     }
+    span {
+      padding-left: 1em;
+    }
+  }
 }
 
 .content {
-    padding: 5em 0 3em;
+  padding: 5em 0 3em;
 }
 
 .intro {
-    padding: 1.2em 3.5em 1.2em 3em;
-    margin-left: 10%;
-    text-align: justify;
+  padding: 1.2em 3.5em 1.2em 3em;
+  margin-left: 10%;
+  text-align: justify;
 }
 
 .section {
-    margin: 4em 3em;
-    .list {
-        padding-bottom: 0.5em;
+  margin: 4em 3em;
+  .list {
+    padding-bottom: 0.5em;
+  }
+  &.section_col {
+    .section__heading {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1.5em 1em 0;
     }
-    &.section_col {
-        .section__heading {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 1.5em 1em 0;
-        }
-        .section__list {
-            display: inline-block;
-            vertical-align: middle;
-            margin-bottom: 1em;
-            .list__item {
-                float: left;
-                padding-right: 3em;
-            }
-            clear: both;
-        }
+    .section__list {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 1em;
+      margin-left: 1.25em;
+      .list__item {
+        float: left;
+        padding-right: 3em;
+      }
+      clear: both;
     }
+  }
 }
 
 .timeline {
-    &:not(.timeline_dotted) {
-        .timeline-item {
-            .timeline-item__line {
-                background-color: $clr-bg !important;
-            }
-        }
+  &:not(.timeline_dotted) {
+    .timeline-item {
+      .timeline-item__line {
+        background-color: $clr-bg !important;
+      }
     }
+  }
 }
 
 .timeline-item {
-    display: flex;
+  display: flex;
 
-    .timeline-item__dates {
-        font-weight: bold;
-        text-align: right;
-        flex: 0 0 25%;
-        padding: 0 1.5em 0 0;
-    }
-    .timeline-item__line {
-        flex: 0 0 1px;
-    }
-    .timeline-item__content {
-        flex: 1;
-        padding: 0 0 0.5em 1.5em;
-    }
+  .timeline-item__dates {
+    font-weight: bold;
+    text-align: right;
+    flex: 0 0 25%;
+    padding: 0 1.5em 0 0;
+  }
+  .timeline-item__line {
+    flex: 0 0 1px;
+  }
+  .timeline-item__content {
+    flex: 1;
+    padding: 0 0 0.5em 1.5em;
+  }
 }
 
 .timeline_dotted {
-    .timeline-item {
-        .timeline-item__line {
-            background-color: $clr-text;
-            &:before {
-                content: '';
-                margin-top: 0.15em;
-                width: 0.6875em;
-                height: 0.6875em;
-                position: absolute;
-                margin-left: calc(-0.6875em / 2 - 0.0625em);
-                border-radius: 100%;
-                border: 1px solid $clr-text;
-                background-color: $clr-bg;
-            }
-        }
-        .timeline-item__content {
-            padding-bottom: 2em;
-        }
-        &:first-child {
-            .timeline-item__line {
-                margin-top: 0.15em;
-                &:before {
-                    margin-top: 0;
-                }
-            }
-        }
-        &:last-child {
-            .timeline-item__content {
-                padding-bottom: 0;
-            }
-        }
+  .timeline-item {
+    .timeline-item__line {
+      background-color: $clr-text;
+      &:before {
+        content: "";
+        margin-top: 0.15em;
+        width: 0.6875em;
+        height: 0.6875em;
+        position: absolute;
+        margin-left: calc(-0.6875em / 2 - 0.0625em);
+        border-radius: 100%;
+        border: 1px solid $clr-text;
+        background-color: $clr-bg;
+      }
     }
+    .timeline-item__content {
+      padding-bottom: 2em;
+    }
+    &:first-child {
+      .timeline-item__line {
+        margin-top: 0.15em;
+        &:before {
+          margin-top: 0;
+        }
+      }
+    }
+    &:last-child {
+      .timeline-item__content {
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
 .list {
-    padding-left: 1em;
-    .list__item {
-        list-style-type: disc;
-    }
+  padding-left: 1em;
+  .list__item {
+    list-style-type: disc;
+  }
 }
 
 .footer {
-    .footer__logo {
-        text-align: center;
-        padding: 2em 3em;
+  .footer__logo {
+    text-align: center;
+    padding: 2em 3em;
+  }
+  .footer__content {
+    font-family: "Calibre";
+    padding: 2em 3em;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      margin-left: -3em;
+      border-style: solid;
+      border-width: 1.5em 0 1.5em 1.5em;
+      border-color: transparent;
+      border-left-color: $clr-back;
     }
-    .footer__content {
-        font-family: 'Calibre';
-        padding: 2em 3em;
-        text-transform: uppercase;
-        &:before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            margin-left: -3em;
-            border-style: solid;
-            border-width: 1.5em 0 1.5em 1.5em;
-            border-color: transparent;
-            border-left-color: $clr-back;
-        }
-    }
+  }
 
-    .footer__paragraph {
-        span {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        .slash {
-            font-family: 'Helvetica Neue LT Pro';
-            font-weight: bold;
-            font-size: 1.25em;
-            color: $clr-accent-light;
-            padding: 0 0.75em;
-        }
-        a {
-            text-decoration: none;
-            color: $clr-text;
-        }
+  .footer__paragraph {
+    span {
+      display: inline-block;
+      vertical-align: middle;
     }
+    .slash {
+      font-family: "Helvetica Neue LT Pro";
+      font-weight: bold;
+      font-size: 1.25em;
+      color: $clr-accent-light;
+      padding: 0 0.75em;
+    }
+    a {
+      text-decoration: none;
+      color: $clr-text;
+    }
+  }
 }
-
