@@ -1,0 +1,37 @@
+@media print {
+
+    .theme_1 .sidebar,
+    .theme_2 .sidebar,
+    .theme_3 .sidebar {
+        background-color: transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    .theme_1 .sidebar_pdf,
+    .theme_2 .sidebar_pdf,
+    .theme_3 .sidebar_pdf {
+        position:fixed;
+        z-index:0;
+        width:33%;
+        height:100%;
+        padding:5em 0 3em
+    }
+
+    .theme_1 .sidebar_pdf{
+        background-color:#2c3036
+    }
+
+    .theme_2 .sidebar_pdf{
+        background-color:#474b55
+    }
+
+    .theme_3 .sidebar_pdf{
+        background-color:#1c3f65
+    }
+
+    .footer_pdf {
+        position: fixed;
+        bottom: 0;
+    }
+}

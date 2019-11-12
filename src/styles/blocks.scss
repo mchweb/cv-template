@@ -39,6 +39,7 @@
 
 .keywords {
   column-count: 2;
+  -moz-columns: 2;
   .keywords__item {
     text-transform: lowercase;
     position: relative;
